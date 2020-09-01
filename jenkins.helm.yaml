@@ -8,6 +8,10 @@ spec:
   targetNamespace: jenkins
   valuesContent: |-
     master:
+      adminUser: admin
+      adminPassword: delta
       image: jenkinsci/blueocean
       tag: latest
       jenkinsUriPrefix: /jenkins
+      JCasC:
+        authorizationStrategy: anyoneCanDoAnything
